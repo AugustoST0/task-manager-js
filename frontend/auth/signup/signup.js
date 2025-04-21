@@ -43,7 +43,7 @@ async function isNameValid(name) {
 }
 
 function goToSignIn() {
-    window.location.href = "http://localhost/task-manager/auth/signin";
+    window.location.href = "http://localhost/task-manager/frontend/auth/signin";
 }
 
 function showPopup(message) {

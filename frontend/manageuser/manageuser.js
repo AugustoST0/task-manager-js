@@ -46,12 +46,12 @@ async function changePassword() {
 }
 
 function goToTaskManager() {
-    window.location.href = "http://localhost/task-manager/tasks/";
+    window.location.href = "http://localhost/task-manager/frontend/tasks/";
 }
 
 function signOut() {
     localStorage.clear();
-    window.location.replace("http://localhost/task-manager/auth/signin/");
+    window.location.replace("http://localhost/task-manager/frontend/auth/signin/");
 }
 
 function showCustomAlert(message, onDelete, onCancel) {

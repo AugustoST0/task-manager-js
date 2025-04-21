@@ -30,7 +30,7 @@ async function submitData() {
                 password: user.password
             }
             localStorage.setItem("user", JSON.stringify(currentUser));
-            window.location.replace("http://localhost/task-manager/tasks/");
+            window.location.replace("http://localhost/task-manager/frontend/tasks/");
             return;
         }
     }
@@ -38,7 +38,7 @@ async function submitData() {
 }
 
 function goToSignUp() {
-    window.location.href = "http://localhost/task-manager/auth/signup";
+    window.location.href = "http://localhost/task-manager/frontend/auth/signup";
 }
 
 function showPopup(message) {

@@ -128,11 +128,11 @@ function generateLine(task) {
 
 function signOut() {
     localStorage.clear();
-    window.location.replace("http://localhost/task-manager/auth/signin/");
+    window.location.replace("http://localhost/task-manager/frontend/auth/signin/");
 }
 
 function goToUserManaging() {
-    window.location.href = "http://localhost/task-manager/manageuser";
+    window.location.href = "http://localhost/task-manager/frontend/manageuser";
 }
 
 function toggleStatus(statusOption, task) {
