@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="icon" type="image/x-icon" href="../../imgs/done.png">
+    <link rel="stylesheet" href="signin.css" class="css">
+</head>
+
+<body>
+    <div id="popups"></div>
+    <div id="all">
+        <h1>Sign in</h1>
+        <div id="fields">
+            <div class="field">
+                <img src="../../imgs/name.png">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="field">
+                <img src="../../imgs/password.png">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div id="submit-button" onclick="submitData()">Sign in</div>
+        </div>
+        <p>Don't have an account? <span onclick="goToSignUp()">Sign up</span></p>
+    </div>
+    <script src="signin.js"></script>
+</body>
+
+</html>

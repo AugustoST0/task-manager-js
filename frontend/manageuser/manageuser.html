@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User managing</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/done.png">
+    <link rel="stylesheet" href="manageuser.css" class="css">
+</head>
+<body>
+    <div id="popups"></div>
+    <div id="custom-alert" class="alert-overlay hidden">
+        <div class="alert-box">
+          <p id="alert-message"></p>
+          <div class="alert-buttons">
+            <button id="alert-delete">Delete</button>
+            <button id="alert-cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    <header>
+        <div id="header-container">
+            <h2 style="cursor: pointer;" onclick="goToTaskManager()">Task Manager</h2>
+            <div id="menu-opener">
+                <img src="../imgs/user.png">
+                <span id="user-name"></span>
+            </div>
+            <div id="options-menu" class="hidden">
+                <ul>
+                    <li onclick="goToTaskManager()">Task Manager</li>
+                    <li onclick="signOut()">Sign out</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main-container">
+            <h1>User Managing</h1>
+            <div>
+                <h3>Change password</h3>
+                <div class="field">
+                    <img src="../imgs/password.png">
+                    <input type="password" id="current-password" placeholder="Current password">
+                </div>
+                <div class="field">
+                    <img src="../imgs/password.png">
+                    <input type="password" id="new-password" placeholder="New password">
+                </div>
+                <div class="field">
+                    <img src="../imgs/password.png">
+                    <input type="password" id="confirmed-new-password" placeholder="Confirm new password">
+                </div>
+                <div id="submit-button" onclick="changePassword()">Change password</div>
+            </div>
+            <div>
+                <h3>Delete account</h3>
+                <div id="delete-button" onclick="deleteAccount()">
+                    <img src="../imgs/deleteRed.png">
+                    <h4>Delete account</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="manageuser.js"></script>
+</body>
+</html>

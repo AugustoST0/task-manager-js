@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="icon" type="image/x-icon" href="../../imgs/done.png">
+    <link rel="stylesheet" href="signup.css" class="css">
+</head>
+
+<body>
+    <div id="popups"></div>
+    <div id="all">
+        <h1>Sign up</h1>
+        <form>
+            <div class="field">
+                <img src="../../imgs/name.png">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="field">
+                <img src="../../imgs/email.png">
+                <input type="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="field">
+                <img src="../../imgs/password.png">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="field">
+                <img src="../../imgs/password.png">
+                <input type="password" id="confirmed-password" placeholder="Confirm password">
+            </div class="field">
+            <div id="submit-button" onclick="submitData()">Sign up</div>
+        </form>
+        <p>Already have an account? <span onclick="goToSignIn()">Sign in</span></p>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
